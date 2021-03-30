@@ -7,6 +7,11 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+/* setting smooth scroll to html */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Hero Section */
 .hero {
   width: 100%;
@@ -22,10 +27,9 @@
 }
 
 .hero-content {
-  width: 50%;
   margin: 0 25px;
   padding: 0 10px;
-  color: white;
+  color: #fff;
 }
 
 .hero-content h1,
@@ -41,12 +45,109 @@ p {
   display: block;
   text-decoration: none;
   border-radius: 6px;
-  background-color: #007bff;
+  background-color: #2db6fa;
   margin: 10px 0;
   padding: 10px;
-  color: white;
+  color: #fff;
   width: 120px;
   text-align: center;
   height: 40px;
   font-size: 18px;
+}
+
+/* Main Section */
+
+.main {
+  margin: 25px 0;
+}
+
+.main h1 {
+  text-align: center;
+  color: #444;
+}
+
+/* Cards */
+.card-container {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-container .card {
+  width: 320px;
+  margin: 10px;
+  height: auto;
+  min-height: 300px;
+  padding: 15px 10px;
+  box-shadow: 4px 4px 5px rgba(66, 66, 66, 0.342),
+    -4px -4px 5px rgba(66, 66, 66, 0.342);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  color: #444;
+}
+
+.card .card-header h3 {
+  text-align: center;
+}
+
+.card .card-content {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.card .card-content ul {
+  padding: 10px;
+  list-style-type: none;
+  text-align: left;
+}
+
+.card .card-content ul li {
+  padding-left: 5px;
+  position: relative;
+}
+
+.card .card-content ul li::before {
+  content: ">";
+  position: absolute;
+  left: -10px;
+}
+
+.card .card-content ul li:hover::before {
+  transform: scale(1.5);
+  transition: 0.2s ease-in;
+}
+
+.ug a,
+.pg a {
+  text-decoration: none;
+  color: #444;
+}
+
+.ug {
+  border-bottom: 4px solid #2db6fa;
+}
+
+.ug:hover {
+  background-color: #2db6fa;
+  color: #fff;
+}
+
+.ug:hover a {
+  color: #fff;
+}
+
+.pg {
+  border-bottom: 4px solid #08da4e;
+}
+
+.pg:hover {
+  background-color: #08da4e;
+  color: #fff;
+}
+
+.pg:hover a {
+  color: #fff;
 }
