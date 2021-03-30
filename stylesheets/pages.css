@@ -46,10 +46,6 @@
 .banner {
   width: 100%;
   height: 300px;
-  background: linear-gradient(transparent, #0000009c), url(../assets/hm.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   color: #fff;
   position: relative;
 }
