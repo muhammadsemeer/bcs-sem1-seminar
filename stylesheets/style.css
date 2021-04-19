@@ -70,12 +70,10 @@ p {
 .card-container {
   width: 100%;
   padding: 15px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 .card-container .card {
+  display: inline-block;
   width: 320px;
   margin: 10px;
   height: auto;
@@ -99,7 +97,7 @@ p {
 
 .card .card-content ul {
   padding: 10px;
-  list-style-type: none;
+  list-style-type: ">";
   text-align: left;
 }
 
@@ -108,16 +106,6 @@ p {
   position: relative;
 }
 
-.card .card-content ul li::before {
-  content: ">";
-  position: absolute;
-  left: -10px;
-}
-
-.card .card-content ul li:hover::before {
-  transform: scale(1.5);
-  transition: 0.2s ease-in;
-}
 
 .ug a,
 .pg a {
