@@ -70,10 +70,11 @@ p {
 .card-container {
   width: 100%;
   padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card-container .card {
-  display: inline-block;
   width: 320px;
   margin: 10px;
   height: auto;
