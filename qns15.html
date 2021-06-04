@@ -1,31 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>book details</title>
     <style>
       body {
-        background-color: rgb(255, 255, 255);
+        background: url("assets/books.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
       }
       table {
-        width: 100%;
-        border: 2px solid #ff0000;
+        width: 50%;
         border-collapse: collapse;
+        text-transform: capitalize;
+        border-style: hidden;
+        margin-left: 25px;
       }
-      thead tr {
-        background-color: #ffffff;
-        border: 2px solid #ff0000;
+      thead {
+        background-color: #0fc9e7;
+        color: #fcfcfc;
       }
+      table tr:first-child th:first-child {
+        border-top-left-radius: 10px;
+      }
+      table tr:first-child th:last-child {
+        border-top-right-radius: 10px;
+      }
+      table tr:last-child td:first-child {
+        border-bottom-left-radius: 10px;
+      }
+      table tr:last-child td:last-child {
+        border-bottom-right-radius: 10px;
+      }
+
       thead tr th {
         padding: 25px;
-        border: 2px solid #ff0000;
+        text-transform: uppercase;
+      }
+      tbody {
+        background: #fcfcfc;
+      }
+      tbody tr:hover,
+      tbody tr:nth-child(even):hover {
+        background-color: #555;
+        color: #fcfcfc;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #ddd;
       }
       tbody tr td {
         text-align: center;
         padding: 15px;
-        border: 2px solid #ff0000;
       }
       h1 {
-        color: "black";
+        color: #0f86e7;
+        text-align: center;
+        width: 50%;
       }
     </style>
   </head>
